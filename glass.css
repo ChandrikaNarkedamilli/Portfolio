@@ -95,6 +95,11 @@ body {
 	outline: none;
 }
 
+.profile-section-container{
+	display: flex;
+	gap: 70px;
+}
+
 /* DESKTOP NAV */
 
 nav,
@@ -347,6 +352,8 @@ section {
 
 .project-details-container {
 	height: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .project-containers {
@@ -547,4 +554,113 @@ h1.card-title {
 	display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media (max-width: 600px) {
+	
+	.logo {
+		display: none;
+}
+
+nav{
+	justify-content: flex-start;
+}
+
+	body{
+		align-items: center;
+		justify-content: center;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	
+	section{
+		padding: none;
+		margin: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project-details-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: auto;
+		height: auto;
+		padding: none;
+		margin-top: 270px;
+		gap: 300px;
+	}
+
+	.project-containers{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: auto;
+		height: auto;
+	}
+
+	.project-box{
+		width: 350px;
+		height: auto;
+		gap: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-img{
+		width: 350px;
+		height: auto;
+		position: relative;
+	}
+
+	.article-container{
+		width: 200px;
+		height: auto;
+		display: flex;
+	}
+
+	.profile-section-container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.skill-details-container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.skills-containers{
+		width : 200px;
+	}
+
+	.section-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.section__pic-container{
+		width: 200px;
+		height: 200px;
+	}
+
+
+	.section__pic-container img{
+		width: 200px;
+		height: 200px;
+	}
+	
+	.about-container{
+		width: 100%;
+		height: auto;
+	}
+
+	.card-bio{
+		width: 260px;
+		height: auto;
+	}
 }
