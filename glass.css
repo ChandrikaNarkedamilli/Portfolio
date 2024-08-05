@@ -367,10 +367,9 @@ section {
 
 .project-video {
 	display: none;
-	width: 330px;
-	height: 300px;
+	width: 600px;
+	height: auto;
 	border-radius: 10px;
-	transition: opacity 0.3s ease-in-out;
 }
 
 .project-img {
@@ -561,11 +560,11 @@ h1.card-title {
 	
 	.logo {
 		display: none;
-}
+	}
 
-nav{
-	justify-content: flex-start;
-}
+	nav{
+		justify-content: flex-start;
+	}
 
 	body{
 		align-items: center;
@@ -608,6 +607,13 @@ nav{
 		gap: 40px;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.project-video {
+		display: none;
+		width: 350px;
+		height: auto;
+		border-radius: 10px;
 	}
 
 	.project-img{
