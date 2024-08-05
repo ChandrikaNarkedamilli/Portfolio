@@ -367,9 +367,10 @@ section {
 
 .project-video {
 	display: none;
-	width: 600px;
-	height: auto;
+	width: 330px;
+	height: 300px;
 	border-radius: 10px;
+	transition: opacity 0.3s ease-in-out;
 }
 
 .project-img {
@@ -614,6 +615,23 @@ nav{
 		height: auto;
 		position: relative;
 	}
+
+	.project-box:hover .project-img {
+    display: none;
+}
+
+.project-box:hover .project-img {
+	opacity: 0; /* Hide the image on hover */
+}
+
+.project-box:hover .project-video {
+	display: block;
+}
+
+.project-box:hover .project-video {
+	display: block; /* Show the video on hover */
+	opacity: 1; /* Ensure it's fully opaque */
+}
 
 	.article-container{
 		width: 200px;
